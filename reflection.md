@@ -11,8 +11,7 @@ Scheduler — sorts, filters, and manages all tasks across pets
 
 **b. Design changes**
 
-- Did your design change during implementation?
-- If yes, describe at least one change and why you made it.
+No major changes and the initial design matched the final implementation.
 
 ---
 
@@ -33,13 +32,11 @@ The conflict detection only checks for exact time matches, not overlapping durat
 
 **a. How you used AI**
 
-- How did you use AI tools during this project (for example: design brainstorming, debugging, refactoring)?
-- What kinds of prompts or questions were most helpful?
+Used AI for brainstorming the class structure and generating test cases. Asking specific questions like "how should Scheduler access Owner's pets" was most helpful.
 
 **b. Judgment and verification**
 
-- Describe one moment where you did not accept an AI suggestion as-is.
-- How did you evaluate or verify what the AI suggested?
+AI added extra methods I didn't need. I reviewed everything manually and removed anything that wasn't part of the original design.
 
 ---
 
@@ -47,13 +44,11 @@ The conflict detection only checks for exact time matches, not overlapping durat
 
 **a. What you tested**
 
-- What behaviors did you test?
-- Why were these tests important?
+Tested task completion, chronological sorting, recurring task scheduling, and conflict detection, the core behaviors of the scheduler.
 
 **b. Confidence**
 
-- How confident are you that your scheduler works correctly?
-- What edge cases would you test next if you had more time?
+4/5. Edge cases like empty pet lists or two pets with identical task names could use more coverage.
 
 ---
 
@@ -61,12 +56,12 @@ The conflict detection only checks for exact time matches, not overlapping durat
 
 **a. What went well**
 
-- What part of this project are you most satisfied with?
+The UML design phase made implementation straightforward. Having a clear blueprint before coding saved a lot of time.
 
 **b. What you would improve**
 
-- If you had another iteration, what would you improve or redesign?
+Add the ability to mark tasks complete directly in the Streamlit UI.
 
 **c. Key takeaway**
 
-- What is one important thing you learned about designing systems or working with AI on this project?
+Designing the system before writing code made collaboration with AI much more effective and I knew exactly what to ask for.
