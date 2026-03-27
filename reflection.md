@@ -4,8 +4,10 @@
 
 **a. Initial design**
 
-- Briefly describe your initial UML design.
-- What classes did you include, and what responsibilities did you assign to each?
+Owner — holds the owner's name and their list of pets
+Pet — holds pet info and a list of tasks
+Task — represents one care activity with a time, duration, and priority
+Scheduler — sorts, filters, and manages all tasks across pets
 
 **b. Design changes**
 
@@ -23,8 +25,7 @@
 
 **b. Tradeoffs**
 
-- Describe one tradeoff your scheduler makes.
-- Why is that tradeoff reasonable for this scenario?
+The conflict detection only checks for exact time matches, not overlapping durations. Two tasks at 08:00 and 08:10 with 30 minute durations would not be flagged.
 
 ---
 
